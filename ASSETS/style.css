@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#firstlink{
+    flex: auto;
+    flex-wrap: wrap;
+    gap: 3; 
+    align-items: center;
+    text-align: center;
+}
+#brandsDropdown{
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 5px
+}
+#specsDropdown{
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding:5px;
+}
+#navbar{
+    background-color: rgb(78, 78, 78);
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    position: sticky;
+}
+#firstlink a,
+#firstlink .dropdown{
+    margin: 0 15px;
+    display: inline-block;
+}
+.dropdown-menu a {
+    display: block;
+    margin: 5px 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#firstlink a{
+    background-color: rgb(78, 78, 78);
+}
+#firstlink .dropdown{
+    background-color:rgb(78, 78, 78);
+}
+#firstlink img{
+    margin-right: 150px;
+}
