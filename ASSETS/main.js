@@ -31,8 +31,8 @@ document.getElementById("navbar").innerHTML=`
 </div>
 `
 function toggleDropdown(linkId, dropdownId) {
-    const link = document.getElementById(linkId);
-    const dropdown = document.getElementById(dropdownId);
+    var link = document.getElementById(linkId);
+    var dropdown = document.getElementById(dropdownId);
 
     link.addEventListener('click', function(e) {
         e.preventDefault();
