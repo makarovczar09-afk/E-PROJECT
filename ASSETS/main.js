@@ -3,7 +3,7 @@ document.getElementById("navbar").innerHTML=`
 <div class="row">
 <div class="col-12" id="firstlink">
 <a href="index.html">
-<img src="ASSETS/IMAGES/ChatGPT Image Dec 16, 2025, 06_23_05 PM.png" alt="Cellinfo.co Logo" style="height:40px; vertical-align: middle;">
+<img src="ASSETS/IMAGES/ChatGPT Image Dec 17, 2025, 06_06_14 PM.png" alt="" style="height:50px; vertical-align: middle;>
 </a>
 <a href="index.html">Home</a>
 
@@ -51,3 +51,35 @@ function toggleDropdown(linkId, dropdownId) {
 
 toggleDropdown('brandsLink', 'brandsDropdown');
 toggleDropdown('specsLink', 'specsDropdown');
+document.getElementById("mainbanner").innerHTML=`
+<img class="img-fluid" src="ASSETS/IMAGES/ChatGPT Image Dec 17, 2025, 06_01_05 PM.png" alt="">
+`
+document.getElementById("footermain").innerHTML=`
+<div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-12 col-md-6" id="footercol">
+                    <h2>ABOUT US</h2>
+                    <p>CellInfo is a mobile phone information and comparison website designed to help users explore mobile phones by brand, features, and specifications. Users can compare phones, view brief summaries, and download detailed feature documents for informed decision-making.</p>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-md-6" id="footercol">
+                    <h2>QUICK LINKS</h2>
+                    <h5><a href="index.html">HOME</a></h5>
+                    <h5><a href="aboutus.html">ABOUT US</a></h5>
+                    <h5><a href="contactus.html">CONTACT US</a></h5>
+                    <a href=""></a>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-md-6" id="footercol">
+                    <h2>POPULAR BRANDS</h2>
+                    <h5><a href="apple.html">APPLE PHONES</a></h5>
+                    <h5><a href="samsung.html">SAMSUNG PHONES</a></h5>
+                    <h5><a href="xiaomi.html">xiaomi PHONES</a></h5>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-md-6" id="footercol">
+                <h2>CONTACT US</h2>
+                <h5>ADDRESS: A-65, ACME Co., Street no 12, New York</h5>
+                <h5>PHONE NUMBER:+001-28272300</h5>
+                <h5>Email Address: webmaster@cellinfo.com</h5>
+                </div>
+            </div>
+        </div>
+`
