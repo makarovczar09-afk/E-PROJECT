@@ -156,4 +156,16 @@ a{
     transform: translateX(0);
   }
 }
+#page-fade {
+  opacity: 0;
+  animation: pageFadeIn 1.2s ease forwards;
+}
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
