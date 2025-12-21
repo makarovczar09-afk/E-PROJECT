@@ -25,6 +25,8 @@ document.getElementById("navbar").innerHTML=`
 </div>
 </div>
 
+<a href="comparison.html">Comparison</a>
+
 <a href="aboutus.html">About Us</a>
 <a href="contactus.html">Contact Us</a>
 </div>
@@ -66,7 +68,7 @@ document.getElementById("footermain").innerHTML=`
                     <h5><a href="index.html">HOME</a></h5>
                     <h5><a href="aboutus.html">ABOUT US</a></h5>
                     <h5><a href="contactus.html">CONTACT US</a></h5>
-                    <a href=""></a>
+                    <h5><a href="comparison.html">COMPARISON</a></h5>
                 </div>
                 <div class="col-lg-3 col-sm-12 col-md-6" id="footercol">
                     <h2>POPULAR BRANDS</h2>

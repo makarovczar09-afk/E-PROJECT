@@ -5,7 +5,11 @@
 }
 body {
   padding-top: 60px;
+  background-color: #eef3f9;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #333;
 }
+
 #firstlink{
     flex: auto;
     flex-wrap: wrap;
@@ -32,12 +36,11 @@ body {
     display: flex;
     align-items: start;
     justify-content: start;
-  position: fixed;
-  top: 0;
-  left: 0;
+    position: fixed;
+    top: 0;
+   left: 0;
   z-index: 1000;
-
-
+  width: 100%;
 }
 #firstlink a,
 #firstlink .dropdown{
@@ -77,6 +80,8 @@ a{
     height: max-content;
     font-size: small;
     padding-top: 20px;
+  text-align: center;
+  line-height: 1.6;
 }
 #footermain a{
     color: grey;
@@ -89,6 +94,14 @@ a{
   border-radius: 12px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  transform: translateX(80px);
+  animation: slideIn 1s ease forwards;
+  transition: transform 0.3s ease;
+  transition: box-shadow 0.3s ease;
+}
+#welcome:hover {
+  transform: translateX(0) translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 #welcome h2 {
   font-size: 32px;
@@ -111,8 +124,14 @@ a{
   margin: 8px 0;
 }
 #zigzag-phones {
-  padding: 40px 0;
-  
+  padding: 40px 0; 
+}
+#zigzag-phones a {
+  color: #4a6cf7;
+  font-weight: 500;
+}
+#zigzag-phones a:hover {
+  text-decoration: underline;
 }
 #zigzag-phones h2 {
   text-align: center;
@@ -132,13 +151,19 @@ a{
 #zigzag-phones ul {
   padding-left: 18px;
 }
+#zigzag-phones ul li {
+  margin-bottom: 6px;
+}
 .card-animate {
   display: flex;
+  background-color: #ffffff;
+  gap: 30px;
   align-items: center;
   opacity: 0;
   transform: translateX(80px);
   animation: slideIn 1s ease forwards;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: box-shadow 0.3s ease;
   padding: 20px;
   border-radius: 12px;
 }
@@ -168,4 +193,106 @@ a{
     opacity: 1;
   }
 }
-
+#latest-updates {
+  background-color: #f7f9fc;
+  padding: 30px 50px;
+  margin: 40px auto;
+  max-width: 900px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+}
+#latest-updates h2 {
+  text-align: center;
+  color: #3a4f7a;
+  margin-bottom: 20px;
+}
+#latest-updates ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+#latest-updates ul li {
+  margin-bottom: 10px;
+  color: #444444;
+  font-size: 15px;
+}
+#latest-updates p {
+  font-size: 14px;
+  text-align: center;
+}
+#latest-updates p{
+      color: red;
+}
+#welcome{
+  margin-bottom: 60px;
+}
+#zigzag-phones{
+  margin-bottom: 60px;
+}
+#latest-updates {
+  margin-bottom: 60px;
+}
+.comparisonpreview {
+  background-color: #f6f8fc;
+  padding: 40px 0;
+  margin-bottom: 60px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+.comparisonpreview h2{
+  color: #4a4a4a;
+  margin-bottom: 10px;
+}
+.comparisonpreview p{
+  color: #6b6b6b;
+  margin-bottom: 20px;
+}
+.comparisonpreview table{
+  background-color: #ffffff;
+  border-collapse: collapse;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.comparisonpreview table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.comparisonpreview th,
+.comparisonpreview td {
+  text-align: center;
+}
+.comparisonpreview tr:nth-child(even) {
+  background-color: #f9fbff;
+}
+.comparisonpreview th{
+  background-color: #e6eaf5;
+  color: #333;
+}
+.comparisonpreview td{
+  color: #555;
+}
+.comparisonpreview table:hover{
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.comparisonpreview button{
+  background-color: #b8c6ff;
+  border: none;
+  padding: 10px 20px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.comparisonpreview button:hover{
+  background-color: #a5b4fc;
+  transform: translateY(-2px);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
