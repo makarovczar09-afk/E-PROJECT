@@ -17,10 +17,10 @@ document.getElementById("navbar").innerHTML=`
 </div>
 
 <div class="dropdown">
-<a href="" class="dropdown-toggle" id="specsLink">Specs ▼</a>
+<a href="" class="dropdown-toggle" id="specsLink">Features ▼</a>
 <div class="dropdown-menu" id="specsDropdown">
-<a href="ram.html">RAM</a><br>
-<a href="storage.html">Storage</a><br>
+<a href="ram.html">5G</a><br>
+<a href="storage.html">Fold phones</a><br>
 <a href="camera.html">Camera</a>
 </div>
 </div>

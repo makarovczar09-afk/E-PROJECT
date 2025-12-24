@@ -58,8 +58,7 @@ a {
     text-decoration: none;
     color: white;
 }
-#brandsDropdown,
-#specsDropdown {
+#brandsDropdown {
     display: none;
     position: absolute;
     background: white;
@@ -229,7 +228,7 @@ a {
   transform: translateY(-2px);
 }
 #footermain {
-    background: linear-gradient(to right, #e0f7fa, #c8f1ff);
+    
     color: rgb(75, 75, 75);
     width: 100%;
     font-size: small;
