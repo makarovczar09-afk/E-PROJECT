@@ -6,13 +6,229 @@
     <title>CELLINFO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="ASSETS/style.css">
-    
+    <style>
+#samsungcardscont {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+h2 {
+  color: #3a4f7a;
+  margin-bottom: 10px;
+}
+p {
+  color: #555;
+  font-size: 15px;
+}
+.container .brand-info {
+  background-color: #f5f9ff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.container .brand-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.container .brand-info h3 {
+  color: #3a4f7a;
+  margin-bottom: 15px;
+}
+.container .brand-info p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.col-md-4 {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 0.8s ease forwards; 
+}
+.col-md-4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  background-color: #f5f9ff;
+}
+.col-md-4:nth-child(1) { animation-delay: 0.1s; }
+.col-md-4:nth-child(2) { animation-delay: 0.3s; }
+.col-md-4:nth-child(3) { animation-delay: 0.5s; }
+.col-md-4:nth-child(4) { animation-delay: 0.7s; }
+.col-md-4:nth-child(5) { animation-delay: 0.9s; }
+.img-fluid {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.img-fluid:hover {
+  transform: scale(1.05);
+}
+a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4a6cf7;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+a:hover {
+  color: #1d3ab8;
+  text-decoration: underline;
+}
+.row.text-center h4 {
+  margin-top: 40px;
+  color: #3a4f7a;
+}
+.row.text-center p {
+  color: #555;
+  font-size: 14px;
+}
+.row.text-center a {
+  color: #4a6cf7;
+  font-weight: bold;
+}
+.row.text-center a:hover {
+  color: #1d3ab8;
+  text-decoration: underline;
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    </style>
 </head>
 <body>
         <div class="container" id="navbar">
-
 </div>
 <div class="banner" id="mainbanner"></div>
+<div class="container my-5" id="samsungcardscont">
+  <div class="row mb-4">
+    <div class="col text-center">
+      <h2>Samsung Mobiles</h2>
+      <p>Explore popular Samsung smartphones with key features and specifications.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <div class="brand-info">
+        <h3>About Samsung</h3>
+        <p>
+          Samsung is a leading global electronics company known for its innovative smartphones.
+          The Galaxy series combines powerful hardware, versatile cameras, and a wide range of options
+          for every user, from budget to premium devices.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col-md-4 text-center">
+      <img src="ASSETS/IMAGES/samsung galaxy s23.jpg" class="img-fluid mb-2" alt="Galaxy S23">
+      <h5>Galaxy S23</h5>
+       <div class="col-md-7">
+                        <h3>Samsung galaxy s23</h3>
+                        <p><strong>Brand:</strong> Samsung</p>
+                        <ul>
+                            <li>Operating System: Android (One UI)</li>
+                            <li>Chipset: Qualcomm Snapdragon 8 Gen 2 for Galaxy</li>
+                            <li>Camera: 50 MP main + 12 MP ultrawide + 10 MP telephoto; Front: 12 MP</li>
+                            <li>Display: 6.1‑inch Dynamic AMOLED 2X, 120Hz refresh rate, HDR10+</li>
+                        </ul>
+                        <a href="">View Details</a>
+                    </div>
+      <p>Flagship performance with advanced camera system.</p>
+      <a href="">View Details</a>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="ASSETS/IMAGES/samsung galaxy s22.jpg" class="img-fluid mb-2" alt="Galaxy S22">
+      <h5>Galaxy S22</h5>
+       <div class="col-md-7">
+                        <h3>Samsung galaxy s22</h3>
+                        <p><strong>Brand:</strong> Samsung</p>
+                        <ul>
+                            <li>Battery: 3700 mAh with fast & wireless charging</li>
+                            <li>Chipset: Qualcomm Snapdragon 8 Gen 1</li>
+                            <li>Camera: Rear: 50 MP main + 12 MP ultrawide + 10 MP telephoto; Front: 10 MP</li>
+                            <li>Display: 6.1‑inch Dynamic AMOLED 2X, 120Hz</li>
+                        </ul>
+                        <a href="">View Details</a>
+                    </div>
+      <p>Sleek design with high-end display and battery life.</p>
+      <a href="">View Details</a>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="ASSETS/IMAGES/samsung galaxy a54.jpg" class="img-fluid mb-2" alt="Galaxy A54">
+      <h5>Galaxy A54</h5>
+       <div class="col-md-7">
+                        <h3>Samsung galaxy a54</h3>
+                        <p><strong>Brand:</strong> Samsung</p>
+                        <ul>
+                            <li>Other: IP67 water/dust resistance, microSD expandability</li>
+                            <li>Chipset: Exynos 1380</li>
+                            <li>Camera: Rear: 50 MP main + 12 MP ultrawide + 5 MP macro; Front: 32 M</li>
+                            <li>Display: 6.4‑inch Super AMOLED, FHD+, 120 Hz</li>
+                        </ul>
+                        <a href="">View Details</a>
+                    </div>
+      <p>Affordable smartphone with solid performance and features.</p>
+      <a href="">View Details</a>
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-md-4 text-center">
+      <img src="ASSETS/IMAGES/samsung galaxy m33.jpg" class="img-fluid mb-2" alt="Galaxy M33">
+      <h5>Galaxy M33</h5>
+       <div class="col-md-7">
+                        <h3>Samsung galaxy m33</h3>
+                        <p><strong>Brand:</strong> Samsung</p>
+                        <ul>
+                            <li>Battery: 5000 mAh with 25W fast charging</li>
+                            <li>Chipset: Samsung Exynos 1280</li>
+                            <li>Camera: Rear: 50 MP + 5 MP ultrawide + 2 MP depth + 2 MP macro; Front: 8 MP</li>
+                            <li>Display: 6.6‑inch TFT LCD, 1080×2408, 120 Hz</li>
+                        </ul>
+                        <a href="">View Details</a>
+                    </div>
+      <p>Long-lasting battery and smooth performance at budget price.</p>
+      <a href="">View Details</a>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="ASSETS/IMAGES/samsung galaxy z fold4.jpg" class="img-fluid mb-2" alt="Galaxy Z Fold 4">
+      <h5>Galaxy Z Fold 4</h5>
+       <div class="col-md-7">
+                        <h3>Samsung galaxy z fold4</h3>
+                        <p><strong>Brand:</strong> Samsung</p>
+                        <ul>
+                            <li>Display:
+Main (inside): ~7.6‑inch Dynamic AMOLED 2X
+Cover (outside): ~6.2‑inch Dynamic AMOLED</li>
+                            <li>Camera: Triple: 50 MP main + 12 MP ultrawide + 10 MP telephoto; Front (cover): 16 MP; Inner selfie: 10 MP</li>
+                            <li>Battery: ~4400 mAh</li>
+                            <li>Chipset: Qualcomm Snapdragon 8+ Gen 1</li>
+                        </ul>
+                        <a href="">View Details</a>
+                    </div>
+      <p>Innovative foldable display with multitasking features.</p>
+      <a href="">View Details</a>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <h4>Not sure which Samsung model to choose?</h4>
+      <p>Compare Samsung phones side by side to find the best one for you.</p>
+      <a href="comparison.html">Go to Comparison Page</a>
+    </div>
+  </div>
+
+</div>
 <div id="footermain"></div>
     <script src="ASSETS/main.js"></script>
 </body>

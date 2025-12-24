@@ -6,13 +6,172 @@
     <title>CELLINFO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="ASSETS/style.css">
-    
+    <style>
+#Xiaomicardscont {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+h2 {
+  color: #3a4f7a;
+  margin-bottom: 10px;
+}
+p {
+  color: #555;
+  font-size: 15px;
+}
+.container .brand-info {
+  background-color: #f5f9ff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.container .brand-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.container .brand-info h3 {
+  color: #3a4f7a;
+  margin-bottom: 15px;
+}
+.container .brand-info p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.col-md-4 {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 0.8s ease forwards; 
+}
+.col-md-4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  background-color: #f5f9ff;
+}
+.col-md-4:nth-child(1) { animation-delay: 0.1s; }
+.col-md-4:nth-child(2) { animation-delay: 0.3s; }
+.col-md-4:nth-child(3) { animation-delay: 0.5s; }
+.col-md-4:nth-child(4) { animation-delay: 0.7s; }
+.col-md-4:nth-child(5) { animation-delay: 0.9s; }
+.img-fluid {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.img-fluid:hover {
+  transform: scale(1.05);
+}
+a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4a6cf7;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+a:hover {
+  color: #1d3ab8;
+  text-decoration: underline;
+}
+.row.text-center h4 {
+  margin-top: 40px;
+  color: #3a4f7a;
+}
+.row.text-center p {
+  color: #555;
+  font-size: 14px;
+}
+.row.text-center a {
+  color: #4a6cf7;
+  font-weight: bold;
+}
+.row.text-center a:hover {
+  color: #1d3ab8;
+  text-decoration: underline;
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    </style>
 </head>
 <body>
         <div class="container" id="navbar">
-
 </div>
 <div class="banner" id="mainbanner"></div>
+<div class="container my-5" id="Xiaomicardscont">
+  <div class="row mb-4">
+    <div class="col text-center">
+      <h2>Xiaomi Mobiles</h2>
+      <p>Explore popular Xiaomi smartphones with key features and specifications.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <div class="brand-info">
+        <h3>About Xiaomi</h3>
+        <p>
+          Xiaomi is a global electronics company offering high-quality smartphones at competitive prices.
+          The Mi and Redmi series provide a balance of performance, camera capabilities, and value,
+          catering to both budget and mid-range smartphone users.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col-md-4 text-center">
+      <img src="" class="img-fluid mb-2" alt="Mi 13">
+      <h5>Mi 13</h5>
+      <p>Flagship performance with high-resolution camera system.</p>
+      <a href="">View Details</a>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="" class="img-fluid mb-2" alt="Mi 12">
+      <h5>Mi 12</h5>
+      <p>Powerful specs in a sleek and stylish design.</p>
+      <a href="">View Details</a>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="" class="img-fluid mb-2" alt="Redmi Note 12">
+      <h5>Redmi Note 12</h5>
+      <p>Affordable smartphone with balanced features and battery life.</p>
+      <a href="">View Details</a>
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-md-4 text-center">
+      <img src="" class="img-fluid mb-2" alt="Redmi Note 11">
+      <h5>Redmi Note 11</h5>
+      <p>Great performance and display at a budget-friendly price.</p>
+      <a href="">View Details</a>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="" class="img-fluid mb-2" alt="Mi Mix Fold">
+      <h5>Mi Mix Fold</h5>
+      <p>Innovative foldable display with premium features.</p>
+      <a href="">View Details</a>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <h4>Not sure which Xiaomi model to choose?</h4>
+      <p>Compare Xiaomi phones side by side to find the best one for you.</p>
+      <a href="#">Go to Comparison Page</a>
+    </div>
+  </div>
+
+</div>
 <div id="footermain"></div>
     <script src="ASSETS/main.js"></script>
 </body>
