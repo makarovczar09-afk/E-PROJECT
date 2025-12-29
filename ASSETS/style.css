@@ -78,6 +78,7 @@ body {
 }
 .dropdown:hover .dropdown-menu {
   display: block;
+  background-color: #d9eff9;
 }
 .menu-icon {
   display: none;
