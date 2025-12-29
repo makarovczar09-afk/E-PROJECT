@@ -1,5 +1,3 @@
-
-
 document.getElementById("footermain").innerHTML = `
 <div class="container">
   <div class="row">
