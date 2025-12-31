@@ -283,6 +283,20 @@ body {
     line-height: 1.6;
     border-top: 4px solid #79d7e8;
 }
+#footermain h2{
+      color: #023047;
+      margin-bottom: 15px;
+}
+#footermain .row > div{
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#footermain .row > div:hover{
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
 #footermain a {
     color: #555;
     position: relative;
