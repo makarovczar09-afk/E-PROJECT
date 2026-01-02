@@ -48,7 +48,7 @@ body {
   font-weight: 600;
   font-size: 15px;
   border-radius: 6px;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 .nav-container p{
       margin-top: 15px;

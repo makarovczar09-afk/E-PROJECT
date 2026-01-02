@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CELLINFO</title>
+    <title>Apple | CELLINFO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="ASSETS/style.css">
     <style>
@@ -106,10 +106,28 @@ ul{
     transform: translateY(0);
   }
 }
+body.apple-page {
+  background-image: url("ASSETS/IMAGES/apple-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 380px;
+  background-attachment: fixed;
+  background-color: #f7f9fc;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
     </style>
     
 </head>
-<body>
+<body class="apple-page">
 <nav class="navbar-custom">
   <div class="nav-container">
     <div class="logo">
@@ -135,11 +153,6 @@ ul{
     </ul>
   </div>
 </nav>
-<div class="banner">
-  <img src="ASSETS/IMAGES/BANNER.jpg" alt="iPhone 17 img">
-</div>
-
-
 <div class="container" id="applecardscont">
   <div class="row ">
     <div class="col text-center">
@@ -234,14 +247,7 @@ ul{
 </div>
 </div>
 
-
-
-
-
-
-
-
 <div id="footermain"></div>
-    <script src="ASSETS/main.js"></script>
 </body>
+<script src="ASSETS/main.js"></script>
 </html>
