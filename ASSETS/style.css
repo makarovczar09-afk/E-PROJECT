@@ -337,3 +337,56 @@ body {
     transform: translateY(0);
   }
 }
+.phone-detail-section {
+  padding: 60px 0;
+  position: relative;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.phone-image img {
+  max-width: 100%;
+  border-radius: 14px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.phone-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.phone-specs {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 30px;
+  border-radius: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.phone-specs:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+.phone-specs h2 {
+  color: #2f3e5c;
+  margin-bottom: 20px;
+}
+.phone-specs p {
+  color: #444;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.apple-bg {
+  background-image: url("IMAGES/apple-logo.png");
+}
+.samsung-bg {
+  background-image: url("IMAGES/samsung-logo.png");
+}
+.xiaomi-bg {
+  background-image: url("IMAGES/xiaomi-logo.png");
+}
+@media (max-width: 768px) {
+  .phone-detail-section {
+    background-size: 180px;
+    padding: 40px 0;
+  }
+  .phone-specs {
+    margin-top: 30px;
+  }
+}
